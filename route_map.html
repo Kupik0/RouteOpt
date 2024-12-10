@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6813e82d8a7e63647bb8f50e932fabbd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6813e82d8a7e63647bb8f50e932fabbd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6813e82d8a7e63647bb8f50e932fabbd = L.map(
+                "map_6813e82d8a7e63647bb8f50e932fabbd",
+                {
+                    center: [39.92077, 32.85411],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": null,
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b20e1ce216b87c81fdc7a0aafc1dd43 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b20e1ce216b87c81fdc7a0aafc1dd43.addTo(map_6813e82d8a7e63647bb8f50e932fabbd);
+        
+    
+            var marker_130ed556762920a0468e0f86f228579b = L.marker(
+                [39.92077, 32.85411],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_6813e82d8a7e63647bb8f50e932fabbd);
+        
+    
+            var icon_acca89940aa58c8c359dc482204cbf3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_130ed556762920a0468e0f86f228579b.setIcon(icon_acca89940aa58c8c359dc482204cbf3b);
+        
+    
+        var popup_fb06efd7fad17ce44be0dad8656f3086 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c518fe7e7dc43fc5a675f29e101b9baa = $(`<div id="html_c518fe7e7dc43fc5a675f29e101b9baa" style="width: 100.0%; height: 100.0%;">Başlangıç</div>`)[0];
+                popup_fb06efd7fad17ce44be0dad8656f3086.setContent(html_c518fe7e7dc43fc5a675f29e101b9baa);
+            
+        
+
+        marker_130ed556762920a0468e0f86f228579b.bindPopup(popup_fb06efd7fad17ce44be0dad8656f3086)
+        ;
+
+        
+    
+    
+            var marker_3a0414cc1dc3a8b82b073156ea490fc7 = L.marker(
+                [39.92553, 32.86628],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_6813e82d8a7e63647bb8f50e932fabbd);
+        
+    
+            var icon_a2f8367ef31d05f9724033f09472d587 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a0414cc1dc3a8b82b073156ea490fc7.setIcon(icon_a2f8367ef31d05f9724033f09472d587);
+        
+    
+        var popup_52f5d81b9173b7dadbe8e3ca90634743 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_1d3f1e7047be02c0b63363df5fbd33dd = $(`<div id="html_1d3f1e7047be02c0b63363df5fbd33dd" style="width: 100.0%; height: 100.0%;">Varış</div>`)[0];
+                popup_52f5d81b9173b7dadbe8e3ca90634743.setContent(html_1d3f1e7047be02c0b63363df5fbd33dd);
+            
+        
+
+        marker_3a0414cc1dc3a8b82b073156ea490fc7.bindPopup(popup_52f5d81b9173b7dadbe8e3ca90634743)
+        ;
+
+        
+    
+    
+            var poly_line_ed35d9b27fe94182ba227a048fd791bc = L.polyline(
+                [[39.92077, 32.85411], [39.92553, 32.86628]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_6813e82d8a7e63647bb8f50e932fabbd);
+        
+</script>
+</html>
